@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		22493DFC1D0CB1CD000F0DA2 /* SwiftyPerlin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22493DFB1D0CB1CD000F0DA2 /* SwiftyPerlin.swift */; };
+		22CA9B6E1D14A0AB003848ED /* VectorMath+Quartz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9B6B1D14A0AB003848ED /* VectorMath+Quartz.swift */; };
+		22CA9B6F1D14A0AB003848ED /* VectorMath+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9B6C1D14A0AB003848ED /* VectorMath+SceneKit.swift */; };
+		22CA9B701D14A0AB003848ED /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9B6D1D14A0AB003848ED /* VectorMath.swift */; };
 		22F8505E1D09ED0500C3DC3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8505D1D09ED0500C3DC3A /* AppDelegate.swift */; };
 		22F850601D09ED0500C3DC3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8505F1D09ED0500C3DC3A /* ViewController.swift */; };
 		22F850621D09ED0500C3DC3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F850611D09ED0500C3DC3A /* Assets.xcassets */; };
@@ -16,6 +19,10 @@
 
 /* Begin PBXFileReference section */
 		22493DFB1D0CB1CD000F0DA2 /* SwiftyPerlin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPerlin.swift; sourceTree = "<group>"; };
+		22CA9B6B1D14A0AB003848ED /* VectorMath+Quartz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+Quartz.swift"; sourceTree = "<group>"; };
+		22CA9B6C1D14A0AB003848ED /* VectorMath+SceneKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VectorMath+SceneKit.swift"; sourceTree = "<group>"; };
+		22CA9B6D1D14A0AB003848ED /* VectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
+		22CA9B711D158598003848ED /* Simplex Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Simplex Playground.playground"; sourceTree = "<group>"; };
 		22F8505A1D09ED0500C3DC3A /* Swifty Perlin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Perlin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F8505D1D09ED0500C3DC3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F8505F1D09ED0500C3DC3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,9 +43,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22CA9B6A1D14A0AB003848ED /* VectorMath */ = {
+			isa = PBXGroup;
+			children = (
+				22CA9B6B1D14A0AB003848ED /* VectorMath+Quartz.swift */,
+				22CA9B6C1D14A0AB003848ED /* VectorMath+SceneKit.swift */,
+				22CA9B6D1D14A0AB003848ED /* VectorMath.swift */,
+			);
+			path = VectorMath;
+			sourceTree = "<group>";
+		};
 		22F850511D09ED0500C3DC3A = {
 			isa = PBXGroup;
 			children = (
+				22CA9B711D158598003848ED /* Simplex Playground.playground */,
 				22F8506C1D0A04B000C3DC3A /* Perlin Playground.playground */,
 				22F8505C1D09ED0500C3DC3A /* Swifty Perlin */,
 				22F8505B1D09ED0500C3DC3A /* Products */,
@@ -56,6 +74,7 @@
 		22F8505C1D09ED0500C3DC3A /* Swifty Perlin */ = {
 			isa = PBXGroup;
 			children = (
+				22CA9B6A1D14A0AB003848ED /* VectorMath */,
 				22F8505D1D09ED0500C3DC3A /* AppDelegate.swift */,
 				22F8505F1D09ED0500C3DC3A /* ViewController.swift */,
 				22F850611D09ED0500C3DC3A /* Assets.xcassets */,
@@ -136,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CA9B6F1D14A0AB003848ED /* VectorMath+SceneKit.swift in Sources */,
 				22F850601D09ED0500C3DC3A /* ViewController.swift in Sources */,
+				22CA9B6E1D14A0AB003848ED /* VectorMath+Quartz.swift in Sources */,
 				22493DFC1D0CB1CD000F0DA2 /* SwiftyPerlin.swift in Sources */,
+				22CA9B701D14A0AB003848ED /* VectorMath.swift in Sources */,
 				22F8505E1D09ED0500C3DC3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
