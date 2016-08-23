@@ -267,7 +267,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Swifty Perlin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.lehr.swiftyperlin.Swifty-Perlin";
+				PRODUCT_BUNDLE_IDENTIFIER = de.timlehr.swiftyperlin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -279,7 +279,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Swifty Perlin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.lehr.swiftyperlin.Swifty-Perlin";
+				PRODUCT_BUNDLE_IDENTIFIER = de.timlehr.swiftyperlin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -21,7 +21,6 @@ class ViewController: NSViewController {
     @IBOutlet var persistenceLbl : NSTextField!
     
     var classic : SwiftyPerlin2D = SwiftyPerlin2D()
-    var simplex : SwiftySimplex = SwiftySimplex()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +38,8 @@ class ViewController: NSViewController {
     }
     
     func newImage(){
-        let noiseResult = simplex.genNoiseImg(Int(noiseView.frame.width), height: Int(noiseView.frame.height), octaves: octave.integerValue, persistence: persistence.doubleValue)
-//        classic.initialise()
-//        let noiseResult = classic.genNoiseImg(Int(noiseView.frame.width), height: Int(noiseView.frame.height), zoom: zoom.doubleValue, octave: octave.doubleValue, persistence: persistence.doubleValue)
+        classic.initialise()
+        let noiseResult = classic.genNoiseImg(Int(noiseView.frame.width), height: Int(noiseView.frame.height), zoom: zoom.doubleValue, octave: octave.doubleValue, persistence: persistence.doubleValue)
         let image = NSImage(CGImage: noiseResult.img, size: NSSize(width: noiseView.frame.width, height: noiseView.frame.height))
         noiseView.image = image
         timeLbl.stringValue = "Render time: \(Double(round(1000*noiseResult.renderTime)/1000)) seconds"
